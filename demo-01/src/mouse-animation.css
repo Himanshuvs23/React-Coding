@@ -1,0 +1,15 @@
+@keyframes Spin {
+    from{
+        transform: rotate(0deg)scale(1);
+    }
+    to{
+        transform: rotate(360deg) scale(2);
+    }
+    
+}
+.react-logo{
+    animation-name: Spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
