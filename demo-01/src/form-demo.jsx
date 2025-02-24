@@ -61,7 +61,7 @@ function handlePriceChange(e){
   }
  return(
     <div className="container-fluid">
-        {(showProduct)?<MouseAnimation/>:(
+        {(showAnimation)?<MouseAnimation/>:(
         <div className={Theme}>
             <div> <input type="checkbox" onChange={handleThemeChange}/> <label >Dark Theme</label> </div>
             <h3>Product Details</h3>
