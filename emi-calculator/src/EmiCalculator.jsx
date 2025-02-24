@@ -28,10 +28,10 @@ export function EmiCalculator(){
         setEmi(emi);
     }
     return(
-        <div className="container-fluid bg-secondary " style={{height:'100vh'}}>
+        <div className="container-fluid bg-secondary  " style={{height:'100vh'}}>
             <h2 className="text-center text-white mt-1" >Personal EMI calculator</h2>
 
-            <div className="p-4 m-4 boder border-1 border-dark bg-light " >
+            <div className="p-4 m-4 boder border-1 border-dark bg-light rounded-2 " >
                 <div className="my-4 row" >
                     <div className="col ">
                     Amount you need &#8377; <input type="text" value={principle}/>
