@@ -5,13 +5,16 @@ import reportWebVitals from './reportWebVitals';
 import { FlipkartMobile } from './product';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import { FormDemo } from './form-demo';
+import { MouseAnimation02 } from './component/mouse-animation02';
+import { KeyboardEvent } from './component/Keyboard-Event';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FormDemo/>
+    
+    <KeyboardEvent/>
+    
 
   </React.StrictMode>
 );

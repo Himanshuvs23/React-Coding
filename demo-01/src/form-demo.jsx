@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from 'react';
-import { MouseAnimation } from "./mouse-animation";
+import { MouseAnimation } from "./component/mouse-animation";
 
 export function FormDemo(){
 
