@@ -7,13 +7,15 @@ import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import { MouseAnimation02 } from './component/mouse-animation02';
 import { KeyboardEvent } from './component/Keyboard-Event';
+import { Btndemo } from './component/elementevent';
+import { Intervaldemo } from './component/Timer event/setInterval';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    <KeyboardEvent/>
+    <Intervaldemo />
     
 
   </React.StrictMode>
