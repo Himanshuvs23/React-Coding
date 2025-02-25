@@ -34,23 +34,35 @@ export function CarouselDemo() {
     }
  
     function handleBar(e){
-        productId.current = e.target.value;
+        productId.current = Number(e.target.value);
         LoadProduct(productId.current);
     }
     
     function NextClick(){
-        productId.current= productId.current+1;
-        LoadProduct(productId.current);
+        if(productId.current ===20){
+            productId.current = 1;
+            LoadProduct(productId.current);
+           }else{
+            productId.current = productId.current + 1;
+            LoadProduct(productId.current);
+           }
+       
     }
     
     function PreviousClick(){
-        productId.current = productId.current - 1;
-        LoadProduct(productId.current);
+if(productId.current ===1){
+    productId.current = 1;
+    LoadProduct(productId.current);
+  }else{
+            productId.current = productId.current - 1;
+            LoadProduct(productId.current);
+}
+  
 
     }
     return(
         <div className="container-fluid d-flex justify-content-center ">
-            <div className="card m-4 p-4 2-50 ">
+            <div className="card m-4 p-4 w-50 ">
                 <div className="card-header text-center " style={{height:'70px'}}> 
                     {product.title} 
                 <div className="fw-bold">{status}</div>
@@ -63,14 +75,15 @@ export function CarouselDemo() {
 
                     <div className="col-10 position-relative" >
                         <div className="position-absolute badge bg-danger p-4 fs-4 text-white rounded rounded-circle end-0">
-                           {product.price.toLocaleString('en-IN', {style:'currency', currency:'INR'})}
+                        {product.price ? product.price.toLocaleString('en-IN', { style: 'currency', currency: 'INR' }) : ''}
+                        
                         </div>
 
                         <img  height='300' width='200' src={product.image}  alt="" />
                     </div>
 
-                    <div className="col-1 d-flex flex-column align-items-center justify-content-center  " onClick={NextClick} >
-                        <button className="btn btn-dark bi bi-chevron-right"></button>
+                    <div className="col-1 d-flex flex-column align-items-center justify-content-center  " >
+                        <button onClick={NextClick} className="btn btn-dark bi bi-chevron-right"></button>
                     </div>
 
                 </div>
