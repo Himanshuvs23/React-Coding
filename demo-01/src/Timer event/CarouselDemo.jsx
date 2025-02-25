@@ -19,6 +19,7 @@ export function CarouselDemo() {
     },[])
 
     function handlePlayClick(){
+
         thread.current = setInterval(LoadProductAuto,1000);
         setStatus('Slide Show Playing');
     }
@@ -29,8 +30,13 @@ export function CarouselDemo() {
         setStatus('Show Paused');
     }
     function LoadProductAuto(){
+        if(productId.current ===20){
+            productId.current = 1;
+            LoadProduct(productId.current);
+        }else{
         productId.current = productId.current + 1;  
         LoadProduct(productId.current);
+    }
     }
  
     function handleBar(e){
@@ -50,10 +56,10 @@ export function CarouselDemo() {
     }
     
     function PreviousClick(){
-if(productId.current ===1){
+     if(productId.current ===1){
     productId.current = 1;
     LoadProduct(productId.current);
-  }else{
+    }else{
             productId.current = productId.current - 1;
             LoadProduct(productId.current);
 }
