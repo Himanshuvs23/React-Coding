@@ -9,13 +9,14 @@ import { MouseAnimation02 } from './component/mouse-animation02';
 import { KeyboardEvent } from './component/Keyboard-Event';
 import { Btndemo } from './component/elementevent';
 import { Intervaldemo } from './component/Timer event/setInterval';
+import { CarouselDemo } from './component/Timer event/CarouselDemo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     
-    <Intervaldemo />
+    <CarouselDemo/>
     
 
   </React.StrictMode>
