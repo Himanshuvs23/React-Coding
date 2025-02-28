@@ -7,7 +7,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import reportWebVitals from './reportWebVitals';
 
 
-import { FlipkartMobile } from './product';
+import { FlipkartMobile } from './axios/product';
 import { MouseAnimation02 } from './component/mouse-animation02';
 import { KeyboardEvent } from './component/Keyboard-Event';
 import { Btndemo } from './component/elementevent';
