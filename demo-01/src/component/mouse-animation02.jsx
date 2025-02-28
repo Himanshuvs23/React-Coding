@@ -11,6 +11,7 @@ export function MouseAnimation02 (){
      }
         return(
 
+            
 
             <div className="container-fluid" onMouseMove={handleMouseMove}>
             <div style={{height:'1000px'}}>Move mouse pointer to test</div>

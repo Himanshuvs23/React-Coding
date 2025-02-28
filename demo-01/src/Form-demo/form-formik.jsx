@@ -13,6 +13,7 @@
             errors.Username=""
         }
 
+        
 
         if(isNaN(user.age)){
             errors.age='Enter a numbefr please'
