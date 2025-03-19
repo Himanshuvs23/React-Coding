@@ -18,15 +18,14 @@ import { Stopwatch } from './Stopwatch/Stopwatch';
 import { Stopwatch1 } from './Stopwatch/Stopwatch2';
 import { Formdemo } from './Form-demo/form-formik';
 import { Formdemo1 } from './Form-demo/form-yup';
+import { Formikbuildin } from './Form-demo/form-yup-inbuild';
+import { Reducerdemo } from './hooks/reducer-demo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
-  <Formdemo1 />
-    
-
+    <Reducerdemo/>
   </React.StrictMode>
 );
 

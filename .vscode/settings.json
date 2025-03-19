@@ -1,0 +1,6 @@
+{
+    "editor.suggest.showStatusBar": true,
+    "codeium.detectProxy": false,
+    "codeium.enableSearch": true,
+    "codeium.useSecretStorage": true
+}

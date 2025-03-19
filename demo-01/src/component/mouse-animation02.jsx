@@ -11,6 +11,8 @@ export function MouseAnimation02 (){
      }
         return(
 
+        
+
             
 
             <div className="container-fluid" onMouseMove={handleMouseMove}>
